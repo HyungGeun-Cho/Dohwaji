@@ -4,3 +4,26 @@
   height: 100%;
   background-color: #f8f9fa;
 }
+
+.PlazaPageWrapper{
+  position: absolute;
+  top:67px;
+  width: 100%;
+  height: calc(100% - 67px);
+  overflow: scroll;
+}
+
+.PostList{
+  position: absolute;
+  top:100px;
+  left: calc((100% - 1056px)/2);
+  width: 1056px;
+  height: 1000px;
+  //border: solid;
+  display: flex;
+  flex-direction: row; /* 왼쪽에서 오른쪽으로 나열되도록 설정 */
+  flex-wrap:wrap;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+}

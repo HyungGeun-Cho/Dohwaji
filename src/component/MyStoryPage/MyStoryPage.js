@@ -50,6 +50,11 @@ const MyStoryPage = () => {
                 <div id="MyStoryMap"></div>
             </div>
 
+            <div className={"MyStoryTextContainer"}>
+
+
+            </div>
+
 
         </div>
     );

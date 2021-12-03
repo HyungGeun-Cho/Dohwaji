@@ -20,7 +20,7 @@ const MainPageHeader = () => {
     };
 
     const handleEveryStoryClick = (e) => {
-        history.push("./mystory");
+        toast.warning("서비스 준비 중입니다 :)");
     };
 
     const handlePlazaClick = (e) => {
@@ -42,7 +42,7 @@ const MainPageHeader = () => {
                 나의 도화지
             </button>
 
-            <button className={"EveryStoryPageButton"}>
+            <button className={"EveryStoryPageButton"} onClick={handleEveryStoryClick}>
                 모두의 도화지
             </button>
 
