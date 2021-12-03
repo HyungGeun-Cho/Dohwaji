@@ -68,10 +68,10 @@
     /*border-color: black;*/
     /*border-radius: 20px;*/
     background-color: rgba(224, 224, 224, 0.4);
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
-    transition: visibility 2s ease-out 0s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
+    transition: visibility 1.5s ease-out 0s;
 }
 
 .LoginPageUsername {
@@ -105,11 +105,12 @@
     left: calc(50% - 180px);
     width: 360px;
     height: 34px;
-    border-style: solid;
-    border-width: 1px;
+    border: none;
+    border-radius: 8px;
     padding-left: 14px;
     font-size: 16px;
     font-family: 'ONE-Mobile-Regular';
+    background-color: #f5f5f5;
 }
 
 .LoginPageInputBoxUsername:focus {
@@ -134,10 +135,11 @@
     left: calc(50% - 180px);
     width: 360px;
     height: 34px;
-    border-style: solid;
-    border-width: 1px;
+    border: none;
+    border-radius: 8px;
     padding-left: 14px;
     font-size: 16px;
+    background-color: #f5f5f5;
 }
 
 .LoginPageInputBoxPassword:focus {

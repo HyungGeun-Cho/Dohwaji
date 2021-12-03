@@ -1,0 +1,21 @@
+.MyStoryPage {
+    position: absolute;
+    top:66px;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    text-align: center;
+
+}
+
+.MyStoryMapContainer{
+    position: absolute;
+    top: 67px;
+    width: 50%;
+
+}
+
+#MyStoryMap{
+    width: calc(100%);
+    height: calc(760px);
+}
