@@ -1,56 +1,126 @@
-.AboutIcon{
-  position: absolute;
-  top: 100px;
-  left: 60px;
-  width:50px;
-  height:50px;
-}
+@media screen and (min-width: 651px) {
+  .MainPageHeader {
+    z-index: 100;
+  }
 
-.IntroTitle{
-  position: absolute;
-  top: 87px;
-  left: 75px;
-  font-family: 'ONE-Mobile-Regular';
-}
+  .IntroPageWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+    overflow: scroll;
+  }
 
-.IntroDetail{
-  position: absolute;
-  top: 160px;
-  left: 75px;
-  border:solid;
-  font-size: 20px;
-  font-family: 'NanumSquareRound';
-  line-height: 40px;
-}
+  .IntroTitle {
+    position: absolute;
+    top: 87px;
+    left: 75px;
+    font-family: 'ONE-Mobile-Regular';
+  }
 
-.TeamTitle{
-  position: absolute;
-  top: 600px;
-  left: 75px;
-  font-size: 20px;
-  font-family: 'NanumSquareRound';
-}
+  .IntroDetail {
+    position: absolute;
+    top: 165px;
+    left: 75px;
+    //border:solid;
+    font-size: 20px;
+    font-family: 'NanumSquareRound';
+    line-height: 40px;
+  }
 
-.TeamMember{
-  position: absolute;
-  top: 640px;
-  left: 75px;
-  font-size: 20px;
-  font-family: 'NanumSquareRound';
-}
+  .TeamTitle {
+    position: absolute;
+    top: 600px;
+    left: 75px;
+    font-size: 20px;
+    font-family: 'NanumSquareRound';
+  }
 
-.TeamDeveloper{
-  position: absolute;
-  top: 690px;
-  left: 75px;
-  font-size: 18px;
-  font-family: 'NanumSquareRound';
-}
+  .TeamMember {
+    position: absolute;
+    top: 640px;
+    left: 75px;
+    font-size: 20px;
+    font-family: 'NanumSquareRound';
+  }
 
-.GithubIcon{
-  position: absolute;
-  top: 697px;
-  left: 470px;
-  width:40px;
-  height:40px;
+  .TeamDeveloper {
+    position: absolute;
+    top: 690px;
+    left: 75px;
+    font-size: 18px;
+    font-family: 'NanumSquareRound';
+  }
+
+  .GithubIcon {
+    position: absolute;
+    top: 697px;
+    left: 470px;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 650px){
+  .MainPageHeader {
+    z-index: 100;
+  }
+
+  .IntroPageWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+    overflow: scroll;
+  }
+
+  .IntroTitle {
+    position: absolute;
+    top: 95px;
+    left: 30px;
+    font-family: 'ONE-Mobile-Regular';
+    font-size: 24px;
+  }
+
+  .IntroDetail {
+    position: absolute;
+    top: 160px;
+    left: 30px;
+    //border:solid;
+    font-size: 16px;
+    font-family: 'NanumSquareRound';
+    line-height: 32px;
+    padding-right: 14px;
+  }
+
+  .TeamTitle {
+    position: absolute;
+    top: 640px;
+    left: 30px;
+    font-size: 18px;
+    font-family: 'NanumSquareRound';
+  }
+
+  .TeamMember {
+    position: absolute;
+    top: 680px;
+    left: 30px;
+    font-size: 16px;
+    font-family: 'NanumSquareRound';
+  }
+
+  .TeamDeveloper {
+    position: absolute;
+    top: 740px;
+    left: 30px;
+    font-size: 14px;
+    font-family: 'NanumSquareRound';
+  }
+
+  .GithubIcon {
+    position: absolute;
+    top: 697px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+  }
 }

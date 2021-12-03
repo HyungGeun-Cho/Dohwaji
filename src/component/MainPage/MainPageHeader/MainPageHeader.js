@@ -24,7 +24,7 @@ const MainPageHeader = () => {
     };
 
     const handlePlazaClick = (e) => {
-        history.push("./mystory");
+        history.push("./plaza");
     };
 
     const handleMyPageClick = (e) => {
@@ -46,7 +46,7 @@ const MainPageHeader = () => {
                 모두의 도화지
             </button>
 
-            <button className={"PlazaPageButton"}>
+            <button className={"PlazaPageButton"} onClick={handlePlazaClick}>
                 도화지 광장
             </button>
 

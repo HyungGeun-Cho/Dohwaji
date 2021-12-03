@@ -6,6 +6,7 @@ import LoginPage from "./component/LoginPage/LoginPage";
 import MainPage from "./component/MainPage/MainPage";
 import MyStoryPage from "./component/MyStoryPage/MyStoryPage";
 import IntroPage from "./component/IntroPage/IntroPage";
+import PlazaPage from "./component/PlazaPage/PlazaPage";
 
 function App() {
   return (
@@ -34,6 +35,12 @@ function App() {
                 path="/intro"
                 restricted={true}
                 component={IntroPage}
+            />
+            <RestrictedRoute
+                exact
+                path="/plaza"
+                restricted={true}
+                component={PlazaPage}
             />
             <Redirect to="/main"/>
         </Switch>

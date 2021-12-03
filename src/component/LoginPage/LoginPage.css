@@ -94,7 +94,7 @@
     position: absolute;
     top: 13px;
     left: calc(50% - 180px);
-    width: 360px;
+    width: 350px;
     height: 30px;
     font-size: 18px;
 }
@@ -102,8 +102,8 @@
 .LoginPageInputBoxUsername {
     position: absolute;
     top: 42px;
-    left: calc(50% - 180px);
-    width: 360px;
+    left: calc(50% - 185px);
+    width: 350px;
     height: 34px;
     border: none;
     border-radius: 8px;
@@ -132,8 +132,8 @@
 .LoginPageInputBoxPassword {
     position: absolute;
     top: 42px;
-    left: calc(50% - 180px);
-    width: 360px;
+    left: calc(50% - 185px);
+    width: 350px;
     height: 34px;
     border: none;
     border-radius: 8px;
@@ -151,8 +151,8 @@
 .LoginButton {
     position: absolute;
     top: 380px;
-    left: calc(50% - 180px);
-    width: 380px;
+    left: calc(50% - 185px);
+    width: 370px;
     height: 40px;
     border-width: 1px;
     border-style: solid;
