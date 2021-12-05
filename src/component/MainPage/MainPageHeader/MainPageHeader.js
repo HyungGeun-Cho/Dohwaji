@@ -3,6 +3,7 @@ import { useAuthContext } from "../../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MainLogo from "../../../photos/MainLogo.svg";
 
 
 const MainPageHeader = () => {
@@ -35,6 +36,7 @@ const MainPageHeader = () => {
 
     return (
         <header className={"MainPageHeader"}>
+
 
             <button className={"Title"} onClick={handleTitleClick}>도화지</button>
 

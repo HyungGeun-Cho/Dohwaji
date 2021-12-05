@@ -89,3 +89,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Bumsom';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_02@1.0/Bumsom.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

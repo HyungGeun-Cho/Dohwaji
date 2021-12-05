@@ -1,6 +1,7 @@
 import "./LoginPage.css";
 import { Link, useHistory } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
+import MainLogo from "../../photos/MainLogo.svg";
 import { useState } from "react";
 import {toast} from "react-toastify";
 
@@ -41,33 +42,45 @@ const LoginPage = () => {
     return (
         <div className={"LoginPage"}>
             {/* 로그인 페이지 로고 및 Login 텍스트 */}
-            <div className={"LoginPageHeader"}>
-                <div className={"LoginPageWelcomeText"}>도화지</div>
-            </div>
 
-            <div className={"LoginPageSubText"}>도시에 이야기를 그리다,</div>
+            <img className={"LoginMainLogo"} src={MainLogo}/>
+
+            {/*<div className={"LoginPageHeader"}>*/}
+            {/*    <div className={"LoginPageWelcomeText"}>도화지</div>*/}
+            {/*</div>*/}
+
+            {/*<div className={"LoginPageSubText"}>도시에 이야기를 그리다,</div>*/}
 
 
             {/* Username, Password, Login 버튼 */}
             <div className={"LoginPageMain"}>
                 <form className={"LoginPageUsername"} onsubmit="return false;">
-                    <div className={"LoginPageInputText"}>아이디</div>
+                    {/*<div className={"LoginPageInputText"}>아이디</div>*/}
                     <input className={"LoginPageInputBoxUsername"} type="text"
+                           placeholder={"아이디"}
                            onChange={(e) => setUsername(e.target.value)}
                            onKeyPress={(e) => handleKeyPress(e)}></input>
                 </form>
 
                 <form className={"LoginPagePassword"} onsubmit="return false;">
-                    <div className={"LoginPageInputText"}>비밀번호</div>
+                    {/*<div className={"LoginPageInputText"}>비밀번호</div>*/}
                     <input className={"LoginPageInputBoxPassword"} type="password"
-                           placeholder={"초기PW: test1234!"}
+                           placeholder={"비밀번호 (test1234!)"}
                            onChange={(e) => setUserPassword(e.target.value)}
                            onKeyPress={(e) => handleKeyPress(e)}></input>
                 </form>
 
                 {/* 로그인 버튼을 누르면 localStorage 토큰 생성 */}
                 <button className={"LoginButton"} onClick={handleLogin}>
-                    시작하기
+                    로그인
+                </button>
+
+                <button className={"FindButton"}>
+                    아이디/비밀번호 찾기
+                </button>
+
+                <button className={"SignInButton"}>
+                    회원가입
                 </button>
 
             </div>
