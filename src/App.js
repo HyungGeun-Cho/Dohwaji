@@ -8,6 +8,7 @@ import MyStoryPage from "./component/MyStoryPage/MyStoryPage";
 import IntroPage from "./component/IntroPage/IntroPage";
 import PlazaPage from "./component/PlazaPage/PlazaPage";
 import Spring from "./component/Spring/Spring";
+import EveryStoryPage from "./component/EveryStoryPage/EveryStoryPage";
 
 function App() {
     return (
@@ -38,6 +39,12 @@ function App() {
                         path="/intro"
                         restricted={true}
                         component={IntroPage}
+                    />
+                    <RestrictedRoute
+                        exact
+                        path="/everystory"
+                        restricted={true}
+                        component={EveryStoryPage}
                     />
                     <RestrictedRoute
                         exact

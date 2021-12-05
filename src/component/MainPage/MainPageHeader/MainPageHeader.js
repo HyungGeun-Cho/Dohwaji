@@ -21,14 +21,14 @@ const MainPageHeader = () => {
     };
 
     const handleEveryStoryClick = (e) => {
-        toast.warning("서비스 준비 중입니다 :)");
+        history.push("./everystory");
     };
 
     const handlePlazaClick = (e) => {
         history.push("./plaza");
     };
 
-    const handleMyPageClick = (e) => {
+    const handleWriteClick = (e) => {
         toast.warning("서비스 준비 중입니다 :)");
     };
 
@@ -40,10 +40,6 @@ const MainPageHeader = () => {
 
             <button className={"Title"} onClick={handleTitleClick}>도화지</button>
 
-            <button className={window.location.pathname==="/mystory"?"MyStoryPageButton_MyStoryPage" : "MyStoryPageButton"} onClick={handleMyStoryClick}>
-                나의 도화지
-            </button>
-
             <button className={"EveryStoryPageButton"} onClick={handleEveryStoryClick}>
                 모두의 도화지
             </button>
@@ -52,10 +48,13 @@ const MainPageHeader = () => {
                 도화지 광장
             </button>
 
-            <p className={"GreetingText"} onClick={handleMyPageClick}>
-                MyPage
-            </p>
+            <button className={"NewPostButton"} onClick={handleWriteClick}>
+                도화지 그리기
+            </button>
 
+            <button className={window.location.pathname==="/mystory"?"MyStoryPageButton_MyStoryPage" : "MyStoryPageButton"} onClick={handleMyStoryClick}>
+                나의 도화지
+            </button>
 
             <button className={"LogoutButton"} onClick={handleLogout}>
                 로그아웃

@@ -2,7 +2,44 @@ import "./MyStoryPage.css";
 import { useEffect } from "react";
 import {useAuthContext} from "../../context/AuthContext";
 import MainPageHeader from "../MainPage/MainPageHeader/MainPageHeader";
+import MainLogo from "../../photos/MainLogo.svg";
+import MyStoryPostItem from "./MyStoryPostItem";
 
+
+const MyStoryPostDummyData = [
+    {
+        id: 1,
+        title: "부산 해방촌 골목길에서",
+        location: "부산특별시시 해방촌",
+        storytime:"2020.10.09 오후 3시 20분",
+        uploadtime:"2021.12.10 오후 9시 23분",
+        postimage: "./busanstreet.JPG"
+    },
+    {
+        id: 2,
+        title: "종로 피맛길에 담긴 이야기",
+        location: "서울시 종로구",
+        storytime:"2020.10.09 오후 3시 20분",
+        uploadtime:"2021.12.10 오후 9시 23분",
+        postimage: "./busanstreet.JPG"
+    },
+    {
+        id: 3,
+        title: "서울로 7017",
+        location: "서울역",
+        storytime:"2020.10.09 오후 3시 20분",
+        uploadtime:"2021.12.10 오후 9시 23분",
+        postimage: "./busanstreet.JPG"
+    },
+    {
+        id: 4,
+        title: "서울대학교 301동의 날씨변화",
+        location: "서울대학교",
+        storytime:"2020.10.09 오후 3시 20분",
+        uploadtime:"2021.12.10 오후 9시 23분",
+        postimage: "./busanstreet.JPG"
+    }
+];
 
 const MyStoryPage = () => {
 
@@ -46,14 +83,27 @@ const MyStoryPage = () => {
     return (
         <div className="MyStoryPage">
             <MainPageHeader/>
+
+            <div className="MyStoryTitleSection">
+                <div className={"MyStoryTitle"}>{localStorage.getItem("username")}의 도화지</div>
+                {/*<img className={"MyStoryMainLogo"} src={MainLogo}/>*/}
+
+            </div>
+
             <div className={"MyStoryMapContainer"}>
                 <div id="MyStoryMap"></div>
             </div>
 
-            <div className={"MyStoryTextContainer"}>
+            {/*<div className={"MyStoryTextContainer"}>*/}
 
 
-            </div>
+            {/*</div>*/}
+
+            <ul className={"MyStoryPostList"}>
+                    {MyStoryPostDummyData.map((item) => (
+                        <MyStoryPostItem item={item} key={item.id} />
+                    ))}
+            </ul>
 
 
         </div>

@@ -5,180 +5,13 @@
         height: 100%;
         overflow: scroll;
         text-align: center;
+        background-color: #F8F0EA;
 
-        background-image: url("./seoulmap_color4.jpg");
-        background-size: 100%;
-        background-position: 100% 50%;
-
-        -moz-animation: fadein 1s; /* Firefox */
-        -webkit-animation: fadein 1s; /* Safari and Chrome */
-        -o-animation: fadein 1s; /* Opera */
-        transition: visibility 1s ease-out 0s;
-    }
+        //background-image: url("./seoulmap_color4.jpg");
+        //background-size: 100%;
+        //background-position: 100% 50%;
 
 
-    /* Animation 관련 css*/
-    @keyframes fadein {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-moz-keyframes fadein {
-        /* Firefox */
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-webkit-keyframes fadein {
-        /* Safari and Chrome */
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-o-keyframes fadein {
-        /* Opera */
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeout {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
-    }
-
-    @-moz-keyframes fadeout {
-        /* Firefox */
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
-    }
-
-    @-webkit-keyframes fadeout {
-        /* Safari and Chrome */
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
-    }
-
-    @-o-keyframes fadeout {
-        /* Opera */
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
-    }
-
-    .MainPageText1 {
-        position: absolute;
-        top: calc(50% - 140px);
-        left: 80px;
-        font-size: 20px;
-        font-family: 'ONE-Mobile-Regular';
-    }
-
-    .MainPageText1:hover {
-        color: #43a83f;
-        transition: 0.15s;
-    }
-
-
-    .MainPageText2 {
-        position: absolute;
-        top: calc(50% - 50px);
-        left: 80px;
-        font-family: 'ONE-Mobile-Regular';
-        /*color: #43a83f;*/
-    }
-
-    .MainPageText3 {
-        visibility: hidden;
-    }
-
-    .MainPageText4 {
-        visibility: hidden;
-    }
-
-    .MainPageText5 {
-        visibility: hidden;
-    }
-
-    .WriteButton {
-        position: absolute;
-        top: calc(50% + 40px);
-        left: 55px;
-        width: 245px;
-        height: 60px;
-        border: none;
-        font-size: 24px;
-        font-weight: bold;
-        font-family: 'ONE-Mobile-Regular';
-        background: none;
-    }
-
-    .WriteButton:hover {
-        font-size: 25px;
-        transition: 0.15s;
-    }
-
-
-    .IntroButton {
-        position: absolute;
-        top: calc(50% + 100px);
-        left: 55px;
-        width: 200px;
-        height: 60px;
-        border: none;
-        font-size: 24px;
-        font-weight: bold;
-        font-family: 'ONE-Mobile-Regular';
-        background: none;
-    }
-
-    .IntroButton:hover {
-        font-size: 25px;
-        transition: 0.15s;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .MainPage {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        overflow: scroll;
-        text-align: center;
-
-        background-image: url("./seoulmap_color4_vertical.png");
-        background-size: 100%;
-        background-position: 100% 50%;
 
         -moz-animation: fadein 1s; /* Firefox */
         -webkit-animation: fadein 1s; /* Safari and Chrome */
@@ -269,7 +102,183 @@
     .MainPageText1 {
         position: absolute;
         top: calc(50% - 160px);
-        left: calc(50% - 250px);
+        left: 100px;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Bumsom';
+    }
+
+    .MainPageText1:hover {
+        color: #E9BAA8;
+        transition: 0.15s;
+    }
+
+
+    .MainPageText2 {
+        position: absolute;
+        top: calc(50% - 70px);
+        left: 100px;
+        font-family: 'Bumsom';
+        font-size: 20px;
+        /*color: #43a83f;*/
+    }
+
+    .MainPageText3 {
+        visibility: hidden;
+    }
+
+    .MainPageText4 {
+        visibility: hidden;
+    }
+
+    .MainPageText5 {
+        visibility: hidden;
+    }
+
+    .WriteButton {
+        position: absolute;
+        top: calc(50% + 40px);
+        left: 55px;
+        width: 245px;
+        height: 60px;
+        border: none;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'ONE-Mobile-Regular';
+        background: none;
+    }
+
+    .WriteButton:hover {
+        font-size: 25px;
+        transition: 0.15s;
+    }
+
+
+    .IntroButton {
+        position: absolute;
+        top: calc(50% + 40px);
+        left: 80px;
+        width: 200px;
+        height: 60px;
+        border: none;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Bumsom';
+        background: none;
+    }
+
+    .IntroButton:hover {
+        font-size: 34px;
+        transition: 0.15s;
+    }
+
+    .MainMainLogo{
+        position: absolute;
+        height: 250px;
+        bottom:100px;
+        right:0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .MainPage {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        text-align: center;
+        background-color: #F8F0EA;
+
+        -moz-animation: fadein 1s; /* Firefox */
+        -webkit-animation: fadein 1s; /* Safari and Chrome */
+        -o-animation: fadein 1s; /* Opera */
+        transition: visibility 1s ease-out 0s;
+    }
+
+
+    /* Animation 관련 css*/
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* Firefox */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* Safari and Chrome */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* Opera */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes fadeout {
+        /* Firefox */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes fadeout {
+        /* Safari and Chrome */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes fadeout {
+        /* Opera */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    .MainPageText1 {
+        position: absolute;
+        top: calc(50% - 160px);
+        left: calc(50% - 250px + 45px);
         width: 500px;
         font-size: 16px;
         font-family: 'ONE-Mobile-Regular';
@@ -284,7 +293,7 @@
     .MainPageText3 {
         position: absolute;
         top: calc(50% - 100px);
-        left: calc(50% - 350px);
+        left: calc(50% - 350px + 45px);
         width: 700px;
         font-family: 'PFStardust';
         font-size: 10px;
@@ -294,7 +303,7 @@
     .MainPageText4 {
         position: absolute;
         top: calc(50% - 40px);
-        left: calc(50% - 350px);
+        left: calc(50% - 350px + 45px);
         width: 700px;
         font-family: 'PFStardust';
         font-size: 10px;
@@ -309,7 +318,7 @@
     .IntroButton {
         position: absolute;
         top: calc(50% + 50px);
-        left: calc(50% - 100px);
+        left: calc(50% - 100px + 45px);
         width: 200px;
         height: 60px;
         border: none;
@@ -330,6 +339,9 @@
         height: 100%;
         background-color: rgba(225, 225, 225, 0.8);
         transition: 1s;
+    }
 
+    .SpringSection{
+        z-index: -10;
     }
 }

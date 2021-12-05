@@ -1,19 +1,57 @@
 .MyStoryPage {
     position: absolute;
+    top:65px;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 67px);
     overflow: scroll;
     text-align: center;
+    background-color: #F8F0EA;
 
 }
 
+
+.MyStoryTitleSection{
+    position: absolute;
+    top: 80px;
+    left: 91px;
+    /*border: solid*/
+    height: 50px;
+    width: calc(45% - 100px);
+}
+
+.MyStoryTitle{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 40px;
+    /*border: solid;*/
+    font-family: 'NanumBarunpen';
+    box-sizing: border-box;
+    overflow-x: scroll;
+
+}
+
+.MyStoryMainLogo {
+    position: relative;
+    top:-140px;
+    left: 10px;
+    height : 150px;
+    border: solid;
+}
+
+
 .MyStoryMapContainer{
     position: absolute;
-    top: 67px;
-    width: 50%;
-    height: calc(100% - 67px);
+    top: 170px;
+    width: calc(45% - 100px);
+    height: calc(100% - 250px);
+    left: 91px;
     /*border: solid;*/
-
+    min-height: 400px;
 }
 
 #MyStoryMap{
@@ -31,4 +69,21 @@
     width: 50%;
     height: calc(100% - 67px);
     /*border: solid;*/
+}
+
+.MyStoryPostList{
+    position: absolute;
+    top: 60px;
+    left: 45%;
+    width: calc(55% - 50px);
+    height: 620px;
+    /*border: solid;*/
+    display: flex;
+    flex-direction: column; /* 왼쪽에서 오른쪽으로 나열되도록 설정 */
+    flex-wrap:wrap;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+    overflow-x:scroll;
+
 }

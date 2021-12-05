@@ -1,0 +1,29 @@
+.EveryStoryPage {
+    position: absolute;
+    top:65px;
+    width: 100%;
+    height: calc(100% - 67px);
+    overflow: scroll;
+    text-align: center;
+    background-color: #F8F0EA;
+
+}
+
+
+.EveryStoryMapContainer{
+    position: absolute;
+    top: 120px;
+    width: calc(63%);
+    bottom: 20px;
+    left: 91px;
+    /*border: solid;*/
+    min-height: 400px;
+}
+
+#EveryStoryMap{
+    top: 15px;
+    left:20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border-radius: 10px;
+}

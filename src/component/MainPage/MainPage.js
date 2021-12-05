@@ -4,6 +4,7 @@ import {useAuthContext} from "../../context/AuthContext";
 import { FcEditImage } from "react-icons/fc";
 import { FcAbout } from "react-icons/fc";
 import {useHistory} from "react-router-dom";
+import MainLogo from "../../photos/MainLogo.svg";
 
 
 const MainPage = () => {
@@ -39,8 +40,10 @@ const MainPage = () => {
             </div>
 
 
-            <button className={"WriteButton"}><FcEditImage/>{`     `+` 이야기 기록하기`}</button>
+            {/*<button className={"WriteButton"}><FcEditImage/>{`     `+` 이야기 기록하기`}</button>*/}
             <button className={"IntroButton"} onClick={handleIntroClick}><FcAbout/>{`     `+` 도화지 소개`}</button>
+
+            <img className={"MainMainLogo"} src={MainLogo}/>
 
 
 
