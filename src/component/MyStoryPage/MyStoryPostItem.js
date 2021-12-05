@@ -1,4 +1,4 @@
-import "./MyStoryPostItem.css";
+import "./MyStoryPostItem.scss";
 
 const MyStoryPostItem = ({item}) => {
 
