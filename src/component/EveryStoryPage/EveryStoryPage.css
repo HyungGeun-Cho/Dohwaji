@@ -12,7 +12,7 @@
 
 .EveryStoryMapContainer{
     position: absolute;
-    top: 120px;
+    top: 60px;
     width: calc(63%);
     bottom: 20px;
     left: 91px;
@@ -26,4 +26,87 @@
     width: calc(100% - 40px);
     height: calc(100% - 40px);
     border-radius: 10px;
+}
+
+.EveryStorySearchInput{
+    position: absolute;
+    top: 120px;
+    left: calc(63% + 90px);
+    width: 310px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.EveryStoryMainLogo{
+    position: absolute;
+    bottom: 20px;
+    right:10px;
+    width: 430px;
+}
+
+.EveryStoryTimeSelect{
+    position: absolute;
+    top: 70px;
+    left: calc(63% + 90px);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+.EveryStoryPopularSelect{
+    position: absolute;
+    top: 70px;
+    left: calc(63% + 200px);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+.EveryStoryLocationSelect{
+    position: absolute;
+    top: 70px;
+    left: calc(63% + 310px);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+}
+
+.EveryStorySearchButton{
+    position: absolute;
+    top: 120px;
+    left: calc(63% + 420px);
+    width: 100px;
+    height: 35px;
+    border: solid 1px;
+    border-color: rgba(49, 49, 49, 0.5);
+    border-radius: 10px;
+}
+
+.Tag1{
+    position: absolute;
+    top: 180px;
+    left: calc(63% + 90px);
+    width: 70px;
+    height: 35px;
+    border: solid 1px;
+    border-color: rgba(169, 169, 169, 0.5);
+    border-radius: 15px;
+    color: #464646;
+}
+
+.Tag2{
+    position: absolute;
+    top: 180px;
+    left: calc(63% + 170px);
+    width: 70px;
+    height: 35px;
+    border: solid 1px;
+    border-color: rgba(169, 169, 169, 0.5);
+    border-radius: 15px;
+    color: #464646;
 }

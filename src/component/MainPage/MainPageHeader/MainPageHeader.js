@@ -40,11 +40,11 @@ const MainPageHeader = () => {
 
             <button className={"Title"} onClick={handleTitleClick}>도화지</button>
 
-            <button className={"EveryStoryPageButton"} onClick={handleEveryStoryClick}>
+            <button className={window.location.pathname==="/everystory"?"EveryStoryPageButton_EveryStoryPage" : "EveryStoryPageButton"} onClick={handleEveryStoryClick}>
                 모두의 도화지
             </button>
 
-            <button className={"PlazaPageButton"} onClick={handlePlazaClick}>
+            <button className={window.location.pathname==="/plaza"?"PlazaPageButton_PlazaPage" : "PlazaPageButton"} onClick={handlePlazaClick}>
                 도화지 광장
             </button>
 

@@ -118,11 +118,10 @@
     border: solid 1px;
     border-color: rgba(215, 215, 215, 0.5);
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
     color: black;
-    font-weight: bold;
     /*font-family: 'ONE-Mobile-Regular';*/
-    font-family: 'Bumsom';
+    font-family: 'NanumSquareRound';
     background-color: #ffffff;
     /* Note: backdrop-filter has minimal browser support */
 }
@@ -153,10 +152,9 @@
     border-color: rgba(215, 215, 215, 0.5);
     border-radius: 10px;
     padding-left: 14px;
-    font-size: 20px;
-    font-family: 'Bumsom';
+    font-size: 15px;
+    font-family: 'NanumSquareRound';
     color: black;
-    font-weight: bold;
     background-color: #ffffff;
 }
 

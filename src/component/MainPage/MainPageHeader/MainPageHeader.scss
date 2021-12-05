@@ -30,7 +30,7 @@
     .EveryStoryPageButton {
         position: absolute;
         top: 20px;
-        left: 225px;
+        left: 340px;
         font-size: 22px;
         font-weight: bold;
         border: none;
@@ -42,14 +42,26 @@
     .EveryStoryPageButton:hover {
         /* 로그아웃 버튼 사용자 피드백 */
         //color: #43a83f;
-        color: #E9BAA8;
+        color: #e89a86;
         transition: 0.15s;
+    }
+    .EveryStoryPageButton_EveryStoryPage{
+        position: absolute;
+        top: 20px;
+        left: 340px;
+        font-size: 22px;
+        font-weight: bold;
+        border: none;
+        background: none;
+        box-sizing: border-box;
+        font-family: 'Bumsom';
+        color: #e89a86;
     }
 
     .PlazaPageButton {
         position: absolute;
         top: 20px;
-        left: 370px;
+        left: 480px;
         font-size: 22px;
         font-weight: bold;
         border: none;
@@ -60,32 +72,47 @@
     }
     .PlazaPageButton:hover {
         /* 로그아웃 버튼 사용자 피드백 */
-        color: #E9BAA8;
+        color: #e89a86;
         transition: 0.15s;
     }
-
-
-    .NewPostButton {
+    .PlazaPageButton_PlazaPage{
         position: absolute;
         top: 20px;
-        right: 275px;
+        left: 480px;
         font-size: 22px;
         font-weight: bold;
         border: none;
         background: none;
         box-sizing: border-box;
         font-family: 'Bumsom';
+        color: #e89a86;
+        //font-family: 'Nanum Gothic', sans-serif;
+    }
+
+
+    .NewPostButton {
+        position: absolute;
+        top: 20px;
+        right: 150px;
+        font-size: 22px;
+        font-weight: bold;
+        border: none;
+        background: none;
+        box-sizing: border-box;
+        font-family: 'Bumsom';
+        color: #e89a86;
+        font-weight: bold;
     }
     .NewPostButton:hover {
         /* 로그아웃 버튼 사용자 피드백 */
-        color: #E9BAA8;
+        color: #e89a86;
         transition: 0.15s;
     }
 
     .MyStoryPageButton {
         position: absolute;
         top: 20px;
-        right: 150px;
+        left: 220px;
         font-size: 22px;
         font-weight: bold;
         border: none;
@@ -95,22 +122,21 @@
     }
     .MyStoryPageButton:hover {
         /* 로그아웃 버튼 사용자 피드백 */
-        color: #E9BAA8;
+        color: #e89a86;
         transition: 0.15s;
     }
 
     .MyStoryPageButton_MyStoryPage {
         position: absolute;
         top: 20px;
-        right: 150px;
+        left: 220px;
         font-size: 22px;
         font-weight: bold;
         border: none;
         background: none;
         box-sizing: border-box;
         font-family: 'Bumsom';
-        color: #E9BAA8;
-
+        color: #e89a86;
     }
 
 
@@ -151,7 +177,7 @@
 
 .LogoutButton:hover {
     /* 로그아웃 버튼 사용자 피드백 */
-    color: #E9BAA8;
+    color: #e89a86;
     transition: 0.15s;
 }
 
@@ -204,8 +230,14 @@
     .EveryStoryPageButton {
        visibility: hidden;
     }
+    .EveryStoryPageButton_EveryStoryPage {
+        visibility: hidden;
+    }
     .PlazaPageButton {
        visibility: hidden;
+    }
+    .PlazaPageButton_PlazaPage {
+        visibility: hidden;
     }
 
     .NewPostButton {
