@@ -101,11 +101,17 @@
 
     .MainPageText1 {
         position: absolute;
-        top: calc(50% - 160px);
-        left: 100px;
-        font-size: 24px;
-        font-weight: bold;
+        top: calc(50% - 180px);
+        left: 200px;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: normal;
+        font-family: 'NanumBarunpen';
+    }
+
+    .MainPageText1_id{
         font-family: 'Bumsom';
+        font-weight: bold;
     }
 
     .MainPageText1:hover {
@@ -113,13 +119,18 @@
         transition: 0.15s;
     }
 
+    .MainPageText1_mobile{
+        visibility: hidden;
+    }
 
     .MainPageText2 {
         position: absolute;
-        top: calc(50% - 70px);
-        left: 100px;
-        font-family: 'Bumsom';
-        font-size: 20px;
+        top: calc(50% - 135px);
+        left: 200px;
+        font-family: 'NanumBarunpen';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
         /*color: #43a83f;*/
     }
 
@@ -134,6 +145,120 @@
     .MainPageText5 {
         visibility: hidden;
     }
+
+    .MyDohwajiSection{
+        position: absolute;
+        top: calc(50% + 100px);
+        left: calc(50% - 480px);
+        //left: 250px;
+        //border: solid;
+    }
+
+    .MyDohwajiSection:hover{
+        color: #e89a86;
+        transition: 0.15s;
+    }
+
+    .MyDohwajiText{
+        position: absolute;
+        top: 100px;
+        left: 88px;
+        font-family: 'Bumsom';
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .MySketchbookSection{
+        position: absolute;
+        top: calc(50% + 89px);
+        left: calc(50% - 260px);
+        //left: 470px;
+        //border: solid;
+    }
+
+    .MySketchbookSection:hover{
+        color: #e89a86;
+        transition: 0.15s;
+    }
+
+    .MySketchbookText{
+        position: absolute;
+        top: 115px;
+        left: 70px;
+        font-family: 'Bumsom';
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .EveryDohwajiSection{
+        position: absolute;
+        top: calc(50% + 90px);
+        left: calc(50% - 80px);
+        //left: 650px;
+        //border: solid;
+    }
+
+    .EveryDohwajiSection:hover{
+        color: #e89a86;
+        transition: 0.15s;
+    }
+
+    .EveryDohwajiText{
+        position: absolute;
+        top: 115px;
+        left: 90px;
+        font-family: 'Bumsom';
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .StoryPlazaSection{
+        position: absolute;
+        top: calc(50% + 75px);
+        left: calc(50% + 150px);
+        //left: 880px;
+        //border: solid;
+    }
+
+    .StoryPlazaSection:hover{
+        color: #e89a86;
+        transition: 0.15s;
+    }
+
+    .StoryPlazaText{
+        position: absolute;
+        top: 130px;
+        left: 50px;
+        font-family: 'Bumsom';
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .DrawDohwajiSection{
+        position: absolute;
+        top: calc(50% + 80px);
+        left: calc(50% + 310px);
+        //left: 1040px;
+        //border: solid;
+    }
+
+    .DrawDohwajiSection:hover{
+        color: #e89a86;
+        transition: 0.15s;
+    }
+
+    .DrawDohwajiText{
+        position: absolute;
+        top: 125px;
+        left: 0px;
+        width: 150px;
+        font-family: 'Bumsom';
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+
+
 
     .WriteButton {
         position: absolute;
@@ -156,27 +281,49 @@
 
     .IntroButton {
         position: absolute;
-        top: calc(50% + 40px);
-        left: 80px;
+        top: calc(50% - 30px);
+        left: 150px;
         width: 200px;
         height: 60px;
         border: none;
-        font-size: 30px;
-        font-weight: bold;
-        font-family: 'Bumsom';
+        font-size: 22px;
+        font-family: 'NanumBarunpen';
         background: none;
+        color: #6B6B6B;
+        z-index: 1;
     }
 
     .IntroButton:hover {
-        font-size: 34px;
-        transition: 0.15s;
+        font-size: 24px;
+        transition: 0.3s;
+    }
+
+    .MainLogoutButton {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: 300px;
+        width: 200px;
+        height: 60px;
+        border: none;
+        font-size: 22px;
+        font-family: 'NanumBarunpen';
+        background: none;
+        color: #6B6B6B;
+        z-index: 1;
+    }
+
+    .MainLogoutButton:hover {
+        font-size: 24px;
+        transition: 0.3s;
     }
 
     .MainMainLogo{
         position: absolute;
-        height: 250px;
-        bottom:100px;
+        top: calc(50% - 160px);
+        height: 300px;
+        bottom:200px;
         right:0px;
+        z-index: 0;
     }
 }
 
@@ -275,12 +422,20 @@
         }
     }
 
-    .MainPageText1 {
+    .MainPageText1{
+        visibility: hidden;
+    }
+
+    .MainPageText1_id{
+        visibility: hidden;
+    }
+
+    .MainPageText1_mobile {
         position: absolute;
         top: calc(50% - 160px);
-        left: calc(50% - 250px + 45px);
+        left: calc(50% - 250px + 30px);
         width: 500px;
-        font-size: 16px;
+        font-size: 13px;
         font-family: 'ONE-Mobile-Regular';
         color: #43a83f;
     }
@@ -293,22 +448,49 @@
     .MainPageText3 {
         position: absolute;
         top: calc(50% - 100px);
-        left: calc(50% - 350px + 45px);
+        left: calc(50% - 350px + 30px);
         width: 700px;
         font-family: 'PFStardust';
         font-size: 10px;
+        line-height: 40px;
         /*color: #43a83f;*/
     }
 
     .MainPageText4 {
         position: absolute;
-        top: calc(50% - 40px);
-        left: calc(50% - 350px + 45px);
+        top: calc(50% - 10px);
+        left: calc(50% - 350px + 25px);
         width: 700px;
         font-family: 'PFStardust';
-        font-size: 10px;
+        font-size: 8px;
         /*color: #43a83f;*/
     }
+
+
+
+    .MyDohwajiSection{
+        visibility: hidden;
+    }
+
+    .MySketchbookSection{
+       visibility: hidden;
+    }
+
+
+    .EveryDohwajiSection{
+       visibility: hidden;
+    }
+
+    .StoryPlazaSection{
+        visibility: hidden;
+    }
+
+
+    .DrawDohwajiSection{
+       visibility: hidden;
+    }
+
+
 
     .WriteButton {
         visibility: hidden;
@@ -317,20 +499,38 @@
 
     .IntroButton {
         position: absolute;
-        top: calc(50% + 50px);
-        left: calc(50% - 100px + 45px);
+        top: calc(50% + 60px);
+        left: calc(50% - 75px);
         width: 200px;
         height: 60px;
         border: none;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: 'ONE-Mobile-Regular';
+        font-size: 22px;
+        font-family: 'NanumBarunpen';
         background: none;
+        color: #6B6B6B;
     }
 
     .IntroButton:hover {
-        font-size: 25px;
-        transition: 0.15s;
+        font-size: 24px;
+        transition: 0.3s;
+    }
+
+    .MainLogoutButton {
+        position: absolute;
+        top: calc(50% + 120px);
+        left: calc(50% - 75px);
+        width: 200px;
+        height: 60px;
+        border: none;
+        font-size: 22px;
+        font-family: 'NanumBarunpen';
+        background: none;
+        color: #6B6B6B;
+    }
+
+    .MainLogoutButton:hover {
+        font-size: 24px;
+        transition: 0.3s;
     }
 
     .MainPageWrapper{
@@ -341,7 +541,11 @@
         transition: 1s;
     }
 
+    .MainMainLogo{
+        visibility: hidden;
+    }
+
     .SpringSection{
-        z-index: -10;
+        z-index: 0;
     }
 }

@@ -1,292 +1,573 @@
-.LoginPage {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /*background-image: url("./busanstreet.JPG");*/
-    background-size: 100%;
-    background-color: #F8F0EA;
-    background-position: 50% 50%;
-    z-index: 1;
-}
+@media screen and (min-width: 600px) {
 
-.LoginMainLogo{
-    position: absolute;
-
-    width: 655px;
-    height: 302px;
-    top: calc(15%);
-    left: calc(50% - 325px + 30px);
-}
-
-
-/*.LoginPageHeader {*/
-/*    position: absolute;*/
-/*    top: 20%;*/
-/*    width: 100%;*/
-/*    height: 100px;*/
-/*    z-index: 1;*/
-/*}*/
-
-/*.LoginWaffleLogo {*/
-/*    position: absolute;*/
-/*    top: 30px;*/
-/*    left: 125px;*/
-/*}*/
-
-/*.LoginPageSubText {*/
-/*    position: absolute;*/
-/*    top: calc(20% - 50px);*/
-/*    left: 15px;*/
-/*    !*border: solid;*!*/
-/*    color: rgba(239, 239, 239, 0.8);*/
-/*    font-family: 'ONE-Mobile-Regular';*/
-/*    font-size: 35px;*/
-/*}*/
-
-
-/*.LoginPageWelcomeText {*/
-/*    position: absolute;*/
-/*    top: 20px;*/
-/*    width: 100%;*/
-/*    height: 100px;*/
-/*    box-sizing: border-box;*/
-/*    text-align: center;*/
-/*    !*font-family: 'KoPubDotumMedium';*!*/
-/*    font-family: 'ONE-Mobile-Regular';*/
-/*    font-size: 35px;*/
-/*    font-weight: bold;*/
-/*    line-height: 115px;*/
-/*    -moz-animation: fadein 1.5s; !* Firefox *!*/
-/*    -webkit-animation: fadein 1.5s; !* Safari and Chrome *!*/
-/*    -o-animation: fadein 1.5s; !* Opera *!*/
-/*    transition: visibility 1.5s ease-out 0s;*/
-/*}*/
-
-{
-/* 로그인 페이지 메인 - Username, Password, Login 버튼 */
-}
-.LoginPageMain {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    height: 500px;
-    /*border-width: 2px;*/
-    /*border-style: solid;*/
-    /*border-color: black;*/
-    /*border-radius: 20px;*/
-    /*background-color: rgba(224, 224, 224, 0.4);*/
-    -moz-animation: fadein 1.5s; /* Firefox */
-    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
-    -o-animation: fadein 1.5s; /* Opera */
-    transition: visibility 1.5s ease-out 0s;
-}
-
-.LoginPageUsername {
-    position: absolute;
-    top: calc(15% + 90px);
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-    /*border: solid;*/
-}
-
-.LoginPagePassword {
-    position: absolute;
-    top: calc(15% + 150px);
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-}
-
-/*.LoginPageInputText {*/
-/*    position: absolute;*/
-/*    top: 13px;*/
-/*    left: calc(50% - 180px);*/
-/*    width: 350px;*/
-/*    height: 30px;*/
-/*    font-size: 18px;*/
-/*}*/
-
-.LoginPageInputBoxUsername {
-    position: absolute;
-    top: 42px;
-    left: calc(50% - 185px);
-    width: 350px;
-    height: 34px;
-    padding-left: 14px;
-    border: solid 1px;
-    border-color: rgba(215, 215, 215, 0.5);
-    border-radius: 10px;
-    font-size: 16px;
-    color: black;
-    /*font-family: 'ONE-Mobile-Regular';*/
-    font-family: 'NanumSquareRound';
-    background-color: #ffffff;
-    /* Note: backdrop-filter has minimal browser support */
-}
-
-.LoginPageInputBoxUsername:focus {
-    outline: none;
-    box-shadow: 0 0 5px gray;
-    transition: 0.3s;
-}
-
-/*.PasswordText {*/
-/*    position: absolute;*/
-/*    top: 30px;*/
-/*    left: 30px;*/
-/*    width: 100px;*/
-/*    height: 30px;*/
-/*    font-size: 20px;*/
-/*    font-weight: bold;*/
-/*}*/
-
-.LoginPageInputBoxPassword {
-    position: absolute;
-    top: 42px;
-    left: calc(50% - 185px);
-    width: 350px;
-    height: 34px;
-    border: solid 1px;
-    border-color: rgba(215, 215, 215, 0.5);
-    border-radius: 10px;
-    padding-left: 14px;
-    font-size: 15px;
-    font-family: 'NanumSquareRound';
-    color: black;
-    background-color: #ffffff;
-}
-
-.LoginPageInputBoxPassword:focus {
-    outline: none;
-    box-shadow: 0 0 5px gray;
-    transition: 0.3s;
-}
-
-.LoginButton {
-    position: absolute;
-    top: calc(15% + 270px);
-    left: calc(50% - 185px);
-    width: 370px;
-    height: 40px;
-    border: none;
-    background: none;
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Bumsom';
-    font-weight: bold;
-}
-
-.FindButton {
-    position: absolute;
-    top: calc(15% + 330px);
-    left: calc(50% - 185px);
-    width: 370px;
-    height: 40px;
-    border: none;
-    background: none;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 18px;
-    font-family: 'Bumsom';
-    font-weight: bold;
-    color: darkgray;
-}
-
-.SignInButton {
-    position: absolute;
-    top: calc(15% + 370px);
-    left: calc(50% - 185px);
-    width: 370px;
-    height: 40px;
-    border: none;
-    background: none;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 18px;
-    font-family: 'Bumsom';
-    font-weight: bold;
-    color: darkgray;
-}
-
-
-
-/* Animation 관련 css*/
-@keyframes fadein {
-    from {
-        opacity: 0;
+    .LoginPage {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /*background-image: url("./busanstreet.JPG");*/
+        background-size: 100%;
+        background-color: #F8F0EA;
+        background-position: 50% 50%;
+        z-index: 1;
     }
-    to {
-        opacity: 1;
+
+    .LoginMainLogo {
+        position: absolute;
+
+        width: 655px;
+        height: 302px;
+        top: calc(15%);
+        left: calc(50% - 325px + 30px);
+    }
+
+
+    /*.LoginPageHeader {*/
+    /*    position: absolute;*/
+    /*    top: 20%;*/
+    /*    width: 100%;*/
+    /*    height: 100px;*/
+    /*    z-index: 1;*/
+    /*}*/
+    /*.LoginWaffleLogo {*/
+    /*    position: absolute;*/
+    /*    top: 30px;*/
+    /*    left: 125px;*/
+    /*}*/
+    /*.LoginPageSubText {*/
+    /*    position: absolute;*/
+    /*    top: calc(20% - 50px);*/
+    /*    left: 15px;*/
+    /*    !*border: solid;*!*/
+    /*    color: rgba(239, 239, 239, 0.8);*/
+    /*    font-family: 'ONE-Mobile-Regular';*/
+    /*    font-size: 35px;*/
+    /*}*/
+    /*.LoginPageWelcomeText {*/
+    /*    position: absolute;*/
+    /*    top: 20px;*/
+    /*    width: 100%;*/
+    /*    height: 100px;*/
+    /*    box-sizing: border-box;*/
+    /*    text-align: center;*/
+    /*    !*font-family: 'KoPubDotumMedium';*!*/
+    /*    font-family: 'ONE-Mobile-Regular';*/
+    /*    font-size: 35px;*/
+    /*    font-weight: bold;*/
+    /*    line-height: 115px;*/
+    /*    -moz-animation: fadein 1.5s; !* Firefox *!*/
+    /*    -webkit-animation: fadein 1.5s; !* Safari and Chrome *!*/
+    /*    -o-animation: fadein 1.5s; !* Opera *!*/
+    /*    transition: visibility 1.5s ease-out 0s;*/
+    /*}*/ {
+    /* 로그인 페이지 메인 - Username, Password, Login 버튼 */
+}
+    .LoginPageMain {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        /*border-width: 2px;*/
+        /*border-style: solid;*/
+        /*border-color: black;*/
+        /*border-radius: 20px;*/
+        /*background-color: rgba(224, 224, 224, 0.4);*/
+        -moz-animation: fadein 1.5s; /* Firefox */
+        -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+        -o-animation: fadein 1.5s; /* Opera */
+        transition: visibility 1.5s ease-out 0s;
+    }
+
+    .LoginPageUsername {
+        position: absolute;
+        top: calc(15% + 90px);
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        /*border: solid;*/
+    }
+
+    .LoginPagePassword {
+        position: absolute;
+        top: calc(15% + 150px);
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+    }
+
+    /*.LoginPageInputText {*/
+    /*    position: absolute;*/
+    /*    top: 13px;*/
+    /*    left: calc(50% - 180px);*/
+    /*    width: 350px;*/
+    /*    height: 30px;*/
+    /*    font-size: 18px;*/
+    /*}*/
+    .LoginPageInputBoxUsername {
+        position: absolute;
+        top: 42px;
+        left: calc(50% - 185px);
+        width: 350px;
+        height: 34px;
+        padding-left: 14px;
+        border: solid 1px;
+        border-color: rgba(215, 215, 215, 0.5);
+        border-radius: 10px;
+        font-size: 16px;
+        color: black;
+        /*font-family: 'ONE-Mobile-Regular';*/
+        font-family: 'NanumSquareRound';
+        background-color: #ffffff;
+        /* Note: backdrop-filter has minimal browser support */
+    }
+
+    .LoginPageInputBoxUsername:focus {
+        outline: none;
+        box-shadow: 0 0 5px gray;
+        transition: 0.3s;
+    }
+
+    /*.PasswordText {*/
+    /*    position: absolute;*/
+    /*    top: 30px;*/
+    /*    left: 30px;*/
+    /*    width: 100px;*/
+    /*    height: 30px;*/
+    /*    font-size: 20px;*/
+    /*    font-weight: bold;*/
+    /*}*/
+    .LoginPageInputBoxPassword {
+        position: absolute;
+        top: 42px;
+        left: calc(50% - 185px);
+        width: 350px;
+        height: 34px;
+        border: solid 1px;
+        border-color: rgba(215, 215, 215, 0.5);
+        border-radius: 10px;
+        padding-left: 14px;
+        font-size: 15px;
+        font-family: 'NanumSquareRound';
+        color: black;
+        background-color: #ffffff;
+    }
+
+    .LoginPageInputBoxPassword:focus {
+        outline: none;
+        box-shadow: 0 0 5px gray;
+        transition: 0.3s;
+    }
+
+    .LoginButton {
+        position: absolute;
+        top: calc(15% + 270px);
+        left: calc(50% - 185px);
+        width: 370px;
+        height: 40px;
+        border: none;
+        background: none;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Bumsom';
+        font-weight: bold;
+    }
+
+    .FindButton {
+        position: absolute;
+        top: calc(15% + 330px);
+        left: calc(50% - 185px);
+        width: 370px;
+        height: 40px;
+        border: none;
+        background: none;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 18px;
+        font-family: 'Bumsom';
+        font-weight: bold;
+        color: darkgray;
+    }
+
+    .SignInButton {
+        position: absolute;
+        top: calc(15% + 370px);
+        left: calc(50% - 185px);
+        width: 370px;
+        height: 40px;
+        border: none;
+        background: none;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 18px;
+        font-family: 'Bumsom';
+        font-weight: bold;
+        color: darkgray;
+    }
+
+
+    /* Animation 관련 css*/
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* Firefox */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* Safari and Chrome */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* Opera */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes fadeout {
+        /* Firefox */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes fadeout {
+        /* Safari and Chrome */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes fadeout {
+        /* Opera */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
     }
 }
 
-@-moz-keyframes fadein {
-    /* Firefox */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+@media screen and (max-width: 600px) {
 
-@-webkit-keyframes fadein {
-    /* Safari and Chrome */
-    from {
-        opacity: 0;
+    .LoginPage {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /*background-image: url("./busanstreet.JPG");*/
+        background-size: 100%;
+        background-color: #F8F0EA;
+        background-position: 50% 50%;
+        z-index: 1;
     }
-    to {
-        opacity: 1;
-    }
-}
 
-@-o-keyframes fadein {
-    /* Opera */
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+    .LoginMainLogo {
+        position: absolute;
 
-@keyframes fadeout {
-    from {
-        opacity: 1;
+        width: 300px;
+        height: 302px;
+        top: calc(15%);
+        left: calc(50% - 150px + 30px);
     }
-    to {
-        opacity: 0;
-    }
-}
 
-@-moz-keyframes fadeout {
-    /* Firefox */
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
 
-@-webkit-keyframes fadeout {
-    /* Safari and Chrome */
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+    /*.LoginPageHeader {*/
+    /*    position: absolute;*/
+    /*    top: 20%;*/
+    /*    width: 100%;*/
+    /*    height: 100px;*/
+    /*    z-index: 1;*/
+    /*}*/
+    /*.LoginWaffleLogo {*/
+    /*    position: absolute;*/
+    /*    top: 30px;*/
+    /*    left: 125px;*/
+    /*}*/
+    /*.LoginPageSubText {*/
+    /*    position: absolute;*/
+    /*    top: calc(20% - 50px);*/
+    /*    left: 15px;*/
+    /*    !*border: solid;*!*/
+    /*    color: rgba(239, 239, 239, 0.8);*/
+    /*    font-family: 'ONE-Mobile-Regular';*/
+    /*    font-size: 35px;*/
+    /*}*/
+    /*.LoginPageWelcomeText {*/
+    /*    position: absolute;*/
+    /*    top: 20px;*/
+    /*    width: 100%;*/
+    /*    height: 100px;*/
+    /*    box-sizing: border-box;*/
+    /*    text-align: center;*/
+    /*    !*font-family: 'KoPubDotumMedium';*!*/
+    /*    font-family: 'ONE-Mobile-Regular';*/
+    /*    font-size: 35px;*/
+    /*    font-weight: bold;*/
+    /*    line-height: 115px;*/
+    /*    -moz-animation: fadein 1.5s; !* Firefox *!*/
+    /*    -webkit-animation: fadein 1.5s; !* Safari and Chrome *!*/
+    /*    -o-animation: fadein 1.5s; !* Opera *!*/
+    /*    transition: visibility 1.5s ease-out 0s;*/
+    /*}*/ {
+    /* 로그인 페이지 메인 - Username, Password, Login 버튼 */
 }
-
-@-o-keyframes fadeout {
-    /* Opera */
-    from {
-        opacity: 1;
+    .LoginPageMain {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        /*border-width: 2px;*/
+        /*border-style: solid;*/
+        /*border-color: black;*/
+        /*border-radius: 20px;*/
+        /*background-color: rgba(224, 224, 224, 0.4);*/
+        -moz-animation: fadein 1.5s; /* Firefox */
+        -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+        -o-animation: fadein 1.5s; /* Opera */
+        transition: visibility 1.5s ease-out 0s;
     }
-    to {
-        opacity: 0;
+
+    .LoginPageUsername {
+        position: absolute;
+        top: calc(15% + 90px);
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        /*border: solid;*/
+    }
+
+    .LoginPagePassword {
+        position: absolute;
+        top: calc(15% + 150px);
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+    }
+
+    /*.LoginPageInputText {*/
+    /*    position: absolute;*/
+    /*    top: 13px;*/
+    /*    left: calc(50% - 180px);*/
+    /*    width: 350px;*/
+    /*    height: 30px;*/
+    /*    font-size: 18px;*/
+    /*}*/
+    .LoginPageInputBoxUsername {
+        position: absolute;
+        top: 42px;
+        left: calc(50% - 100px - 20px);
+        width: 260px;
+        height: 34px;
+        padding-left: 14px;
+        border: solid 1px;
+        border-color: rgba(215, 215, 215, 0.5);
+        border-radius: 10px;
+        font-size: 16px;
+        color: black;
+        /*font-family: 'ONE-Mobile-Regular';*/
+        font-family: 'NanumSquareRound';
+        background-color: #ffffff;
+        /* Note: backdrop-filter has minimal browser support */
+    }
+
+    .LoginPageInputBoxUsername:focus {
+        outline: none;
+        box-shadow: 0 0 5px gray;
+        transition: 0.3s;
+    }
+
+    /*.PasswordText {*/
+    /*    position: absolute;*/
+    /*    top: 30px;*/
+    /*    left: 30px;*/
+    /*    width: 100px;*/
+    /*    height: 30px;*/
+    /*    font-size: 20px;*/
+    /*    font-weight: bold;*/
+    /*}*/
+    .LoginPageInputBoxPassword {
+        position: absolute;
+        top: 42px;
+        left: calc(50% - 100px - 20px);
+        width: 260px;
+        height: 34px;
+        border: solid 1px;
+        border-color: rgba(215, 215, 215, 0.5);
+        border-radius: 10px;
+        padding-left: 14px;
+        font-size: 15px;
+        font-family: 'NanumSquareRound';
+        color: black;
+        background-color: #ffffff;
+    }
+
+    .LoginPageInputBoxPassword:focus {
+        outline: none;
+        box-shadow: 0 0 5px gray;
+        transition: 0.3s;
+    }
+
+    .LoginButton {
+        position: absolute;
+        top: calc(15% + 270px);
+        left: calc(50% - 185px);
+        width: 370px;
+        height: 40px;
+        border: none;
+        background: none;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Bumsom';
+        font-weight: bold;
+    }
+
+    .FindButton {
+        position: absolute;
+        top: calc(15% + 330px);
+        left: calc(50% - 185px);
+        width: 370px;
+        height: 40px;
+        border: none;
+        background: none;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 18px;
+        font-family: 'Bumsom';
+        font-weight: bold;
+        color: darkgray;
+    }
+
+    .SignInButton {
+        position: absolute;
+        top: calc(15% + 370px);
+        left: calc(50% - 185px);
+        width: 370px;
+        height: 40px;
+        border: none;
+        background: none;
+        text-align: center;
+        text-decoration: underline;
+        font-size: 18px;
+        font-family: 'Bumsom';
+        font-weight: bold;
+        color: darkgray;
+    }
+
+
+    /* Animation 관련 css*/
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+        /* Firefox */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+        /* Safari and Chrome */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+        /* Opera */
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeout {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes fadeout {
+        /* Firefox */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes fadeout {
+        /* Safari and Chrome */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes fadeout {
+        /* Opera */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
     }
 }

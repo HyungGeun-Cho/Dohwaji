@@ -9,34 +9,35 @@ import MyStoryPostItem from "./MyStoryPostItem";
 const MyStoryPostDummyData = [
     {
         id: 1,
-        title: "종로 피맛길에 담긴 이야기",
-        location: "서울시 종로구",
-        storytime:"조선시대 중기",
-        uploadtime:"2021.12.10 오후 9시 23분",
+        title: "\"우리 동네 놀이터에...\"",
+        location: "놀이터",
+        storytime: "2021.12.13. 오후 7시경",
+        uploadtime:"2021.12.14. 오후 9시 13분",
         postimage: "./busanstreet.JPG"
     },
     {
         id: 2,
-        title: "서울로 7017과 도시재생",
-        location: "서울역",
-        storytime:"2017.11.09 오후 1시 10분",
-        uploadtime:"2021.12.08 오후 4시 13분",
+        title: "\"혼맥하기 좋은 벤치를 찾아서\"",
+        location: "서울시 종로구",
+        storytime: "2021.12.11. 오후 10시경",
+        uploadtime:"2021.12.14. 오후 7시 22분",
         postimage: "./busanstreet.JPG"
     },
+
     {
         id: 3,
-        title: "서울대학교 301동 너무 멀어...",
-        location: "서울대학교",
-        storytime:"2021.12.01 오후 7시 00분",
-        uploadtime:"2021.12.01 오후 10시 00분",
+        title: "\"종로 피맛길에 담긴 이야기\"",
+        location: "서울시 종로구",
+        storytime:"조선시대 중기",
+        uploadtime:"2021.12.10. 오후 9시 23분",
         postimage: "./busanstreet.JPG"
     },
     {
         id: 4,
-        title: "부산 해방촌 골목길에서",
+        title: "\"부산 해방촌 골목길에서\"",
         location: "부산특별시시 해방촌",
-        storytime:"2019.08.09 오전 11시 20분",
-        uploadtime:"2021.11.30 오후 5시 23분",
+        storytime:"2019.08.09. 오전 11시 20분",
+        uploadtime:"2021.11.30. 오후 5시 23분",
         postimage: "./busanstreet.JPG"
     },
 ];

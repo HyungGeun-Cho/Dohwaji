@@ -19,7 +19,7 @@ const MyStoryPostItem = ({item}) => {
                 </div>
             </div>
 
-            <img className={"MyStoryPostItemPhoto"} src={require("./busanstreet.JPG").default}></img>
+            <img className={"MyStoryPostItemPhoto"} src={require(itemId===1?"./image1.png": itemId===2? "./image2.png" : itemId===3? "./image3.png" : "./busanstreet.JPG").default}></img>
                 {/*<img className={"MyStoryPostPhoto"} src={require(itemId+`.JPG`).default} alt={"포스트 이미지"}></img>*/}
 
 

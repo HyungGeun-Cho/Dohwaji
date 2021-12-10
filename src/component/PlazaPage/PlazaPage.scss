@@ -6,41 +6,122 @@
   z-index: 200;
 }
 
-.PlazaPageWrapper{
+.RecommendSection{
   position: absolute;
-  top:67px;
+  top: 100px;
+  left: 140px;
+  bottom: 0px;
+  width: 400px;
+  //border: solid;
+}
+
+.TrendSection{
+  position: absolute;
+  top: 100px;
+  left: 570px;
+  bottom: 0px;
+  width: 400px;
+  //border: solid;
+}
+
+.NeighborhoodSection{
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+  bottom: 0px;
+  width: 400px;
+  //border: solid;
+}
+
+.SectionTitle{
+  position: absolute;
+  font-family: Bumsom;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.SectionList{
+  position: absolute;
+  top: 60px;
+  bottom: 0px;
   width: 100%;
-  height: calc(100% - 67px);
-  overflow: scroll;
+  //border: solid;
+  background: #D6D6D6;
+  opacity: 0.5;
+  z-index: 0;
 }
-@media(min-width: 1057px) {
-  .PostList {
-    position: absolute;
-    top: 100px;
-    left: calc((100% - 1056px) / 2);
-    width: 1056px;
-    height: auto;
-    //border: solid;
-    display: flex;
-    flex-direction: row; /* 왼쪽에서 오른쪽으로 나열되도록 설정 */
-    flex-wrap: wrap;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    padding-inline-start: 0px;
-  }
+
+.ItemTitle{
+  position: relative;
+  top: 60px;
+  left: 30px;
+  width: 100%;
+  height:30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'NanumSquareRound';
 }
-@media(max-width: 1056px) {
-  .PostList {
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    height: auto;
-    //border: solid;
-    display: flex;
-    flex-direction: row; /* 왼쪽에서 오른쪽으로 나열되도록 설정 */
-    flex-wrap: wrap;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    padding-inline-start: 0px;
-  }
+
+.RecommendItem{
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 270px;
+  background-image: url("./image 39.png");
+}
+
+.TrendItem{
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 270px;
+  background-image: url("./Rectangle 11.png");
+}
+
+.NeighborhoodItem{
+  position: absolute;
+  top: 140px;
+  width: 100%;
+  height: 270px;
+  background-image: url("./Rectangle 10.png");
+}
+
+.ItemStorySection{
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  height: 30px;
+  //border: solid;
+}
+
+.ItemUploadSection{
+  position: absolute;
+  top: 180px;
+  width: 100%;
+  height: 30px;
+  //border: solid;
+}
+
+
+.ItemTimeText{
+  position: absolute;
+  left: 35px;
+  height: 36px;
+  /*border: solid;*/
+  font-family: 'NanumSquareRound';
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: -0.015em;
+}
+
+.ItemTime{
+  position: absolute;
+  top: 3px;
+  left: 115px;
+  height: 36px;
+  /*border: solid;*/
+  font-family: 'NanumSquareRound';
+  font-size: 12px;
+  letter-spacing: -0.015em;
+  color: rgba(135, 135, 135, 0.8);
 }

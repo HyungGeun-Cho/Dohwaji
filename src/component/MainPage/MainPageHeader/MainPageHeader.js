@@ -3,7 +3,7 @@ import { useAuthContext } from "../../../context/AuthContext";
 import { useHistory } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import MainLogo from "../../../photos/MainLogo.svg";
+import { AiOutlineHome } from "react-icons/ai";
 
 
 const MainPageHeader = () => {
@@ -38,14 +38,14 @@ const MainPageHeader = () => {
         <header className={"MainPageHeader"}>
 
 
-            <button className={"Title"} onClick={handleTitleClick}>도화지</button>
+            <button className={"Title"} onClick={handleTitleClick}><AiOutlineHome/></button>
 
             <button className={window.location.pathname==="/everystory"?"EveryStoryPageButton_EveryStoryPage" : "EveryStoryPageButton"} onClick={handleEveryStoryClick}>
                 모두의 도화지
             </button>
 
             <button className={window.location.pathname==="/plaza"?"PlazaPageButton_PlazaPage" : "PlazaPageButton"} onClick={handlePlazaClick}>
-                도화지 광장
+                이야기 광장
             </button>
 
             <button className={"NewPostButton"} onClick={handleWriteClick}>
