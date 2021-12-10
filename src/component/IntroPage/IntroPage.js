@@ -26,7 +26,7 @@ const IntroPage = () => {
             <p className={"TeamMember"}>남휘근, 김윤빈, 김별, 조형근</p>
             <p className={"TeamDeveloper"}>Designed by 김별 / Web Developed by 조형근</p>
 
-            <a href="https://github.com/HyungGeun-Cho/SpaceDiary/tree/master">
+            <a href="https://github.com/HyungGeun-Cho/Dohwaji/tree/NewDesign">
                 <GoMarkGithub className = "GithubIcon"></GoMarkGithub>
             </a>
 
